@@ -8,8 +8,6 @@ class Loading extends StatefulWidget {
 }
 
 class _LoadingState extends State<Loading> {
-  
-
   void getWorldTime() async {
     WorldTime worldTime = WorldTime(
         location: 'Berlin', flag: 'germany.png', url: 'Europe/Berlin/');
@@ -32,12 +30,8 @@ class _LoadingState extends State<Loading> {
   Widget build(BuildContext context) {
     return Container(
       color: Colors.blue[900],
-      child: Center(
-        child: SpinKitFadingCircle(
-          color: Colors.white, 
-          size: 50.0
-        )
-      ),
+      child:
+          Center(child: SpinKitFadingCircle(color: Colors.white, size: 50.0)),
     );
   }
 }
